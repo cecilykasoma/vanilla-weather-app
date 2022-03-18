@@ -1,12 +1,33 @@
-.container {
-  display: block;
-  margin: 100px auto;
+body {
+  font-family: arial, sans-serif;
+}
+
+.weather-app {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 40px 40px 10px 40px;
+  border: 1px solid #d9d9d9;
+  border-radius: 10px;
 }
 .temp {
-  font-size: 60px;
+  font-size: 40px;
   font-weight: 500;
 }
 ul {
   list-style-type: none;
   padding-left: 0;
+  color: rgb(112, 117, 122);
+
+  font-size: 12px;
+  font-weight: 400;
+
+  line-height: 16px;
+}
+
+.col-4 {
+  color: rgb(32, 33, 36);
+  display: block;
+  font-size: 22px;
+  font-weight: 400;
+  text-align: right;
 }
