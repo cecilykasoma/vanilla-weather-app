@@ -1,0 +1,12 @@
+.container {
+  display: block;
+  margin: 100px auto;
+}
+.temp {
+  font-size: 60px;
+  font-weight: 500;
+}
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
