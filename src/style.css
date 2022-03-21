@@ -1,3 +1,6 @@
+.container {
+  padding: 0;
+}
 body {
   font-family: arial, sans-serif;
 }
@@ -9,25 +12,44 @@ body {
   border: 1px solid #d9d9d9;
   border-radius: 10px;
 }
+.icon,
+.temperature,
+.weather-details,
+.city-details {
+  padding: 0;
+}
+.weather-details {
+  padding: 10px 0px 0px 5px;
+}
+.temperature {
+  text-align: right;
+}
 .temp {
-  font-size: 40px;
+  font-size: 34px;
   font-weight: 500;
 }
+.unit {
+  font-size: 10px;
+}
+
 ul {
   list-style-type: none;
   padding-left: 0;
   color: rgb(112, 117, 122);
-
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 400;
-
-  line-height: 16px;
+  line-height: 10px;
+}
+.city-details {
+  text-align: right;
 }
 
-.col-4 {
+h2 {
   color: rgb(32, 33, 36);
-  display: block;
-  font-size: 22px;
+  margin-bottom: 0;
+  font-size: 26px;
   font-weight: 400;
-  text-align: right;
+}
+.date-description {
+  font-size: 12px;
 }
