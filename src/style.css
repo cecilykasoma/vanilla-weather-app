@@ -62,6 +62,9 @@ h2 {
 }
 .date-description {
   font-size: 12px;
+}
+#date,
+#description:first-letter {
   text-transform: capitalize;
 }
 small {
