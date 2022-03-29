@@ -17,6 +17,22 @@
   <body>
     <div class="container">
       <div class="weather-app">
+        <!-- search bar -->
+        <div class="row">
+          <div class="container-fluid mb-4 search-bar">
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Type a city..."
+                id="city-input"
+              />
+              <!-- submit button -->
+              <button type="submit" class="btn btn-secondary">Search</button>
+            </form>
+          </div>
+        </div>
+        <!-- weather icon -->
         <div class="row">
           <div class="col-2 icon">
             <img
@@ -25,6 +41,7 @@
               id="icon"
             />
           </div>
+          <!-- temperature -->
           <div class="col-2 temperature">
             <span class="temp" id="temperature"></span>
             <span class="unit"
@@ -32,7 +49,7 @@
               <a href="#" id="farenheit">°F</a></span
             >
           </div>
-
+          <!-- weather details -->
           <div class="col-3 weather-details">
             <ul>
               <li>Precipitation: <span id="precipitation"></span>%</li>
@@ -40,7 +57,7 @@
               <li>Wind: <span id="wind"></span>km/h</li>
             </ul>
           </div>
-
+          <!-- city, date and time and weather summary -->
           <div class="col-5 city-details">
             <h2 id="city">London</h2>
             <ul class="date-description">
