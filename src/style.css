@@ -30,6 +30,7 @@ body {
 .temperature {
   text-align: right;
 }
+
 .temp {
   font-size: 40px;
   font-weight: 500;
@@ -39,11 +40,13 @@ body {
   display: inline-block;
   vertical-align: top;
 }
-#celcius,
-#farenheit {
+
+.temperature .active {
+  color: rgb(32, 33, 36);
+  cursor: default;
   text-decoration: none;
-  color: rgb(112, 117, 122);
 }
+
 #icon {
   max-width: 100%;
 }
