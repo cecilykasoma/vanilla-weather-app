@@ -75,6 +75,11 @@ function displayCelciusTemperature(event) {
   farenheitLink.classList.remove("active");
   temperatureElement.innerHTML = Math.round(celciusTemperature);
 }
+// weather forecast
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  forecastElement.innerHTML = "Forecast";
+}
 
 let celciusTemperature = null;
 
@@ -86,3 +91,6 @@ farenheitLink.addEventListener("click", displayFarenheitTemperature);
 
 let celciusLink = document.querySelector("#celcius");
 celciusLink.addEventListener("click", displayCelciusTemperature);
+
+search("London");
+displayForecast();
