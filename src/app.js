@@ -58,24 +58,24 @@ function handleSubmit(event) {
 
 // farenheit conversion
 
-function displayFarenheitTemperature(event) {
-  event.preventDefault();
-  let temperatureElement = document.querySelector("#temperature");
-  celciusLink.classList.remove("active");
-  farenheitLink.classList.add("active");
-  let farenheitTemperature = (celciusTemperature * 9) / 5 + 32;
-  temperatureElement.innerHTML = Math.round(farenheitTemperature);
-}
+// function displayFarenheitTemperature(event) {
+//   event.preventDefault();
+//   let temperatureElement = document.querySelector("#temperature");
+//   celciusLink.classList.remove("active");
+//   farenheitLink.classList.add("active");
+//   let farenheitTemperature = (celciusTemperature * 9) / 5 + 32;
+//   temperatureElement.innerHTML = Math.round(farenheitTemperature);
+// }
 
-// celcius conversion
+// // celcius conversion
 
-function displayCelciusTemperature(event) {
-  event.preventDefault();
-  let temperatureElement = document.querySelector("#temperature");
-  celciusLink.classList.add("active");
-  farenheitLink.classList.remove("active");
-  temperatureElement.innerHTML = Math.round(celciusTemperature);
-}
+// function displayCelciusTemperature(event) {
+//   event.preventDefault();
+//   let temperatureElement = document.querySelector("#temperature");
+//   celciusLink.classList.add("active");
+//   farenheitLink.classList.remove("active");
+//   temperatureElement.innerHTML = Math.round(celciusTemperature);
+// }
 // weather forecast
 function getForecast(coordinates) {
   let apiKey = "f40ed1916a487f9b9d24602c83f9b430";
@@ -126,16 +126,16 @@ function displayForecast(response) {
   forecastElement.innerHTML = forecastHTML;
 }
 
-let celciusTemperature = null;
+// let celciusTemperature = null;
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
 
-let farenheitLink = document.querySelector("#farenheit");
-farenheitLink.addEventListener("click", displayFarenheitTemperature);
+// let farenheitLink = document.querySelector("#farenheit");
+// farenheitLink.addEventListener("click", displayFarenheitTemperature);
 
-let celciusLink = document.querySelector("#celcius");
-celciusLink.addEventListener("click", displayCelciusTemperature);
+// let celciusLink = document.querySelector("#celcius");
+// celciusLink.addEventListener("click", displayCelciusTemperature);
 
 search("London");
 displayForecast();
